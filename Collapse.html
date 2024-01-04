@@ -1,0 +1,55 @@
+<head> 
+	<style> 
+		.collapsible-section {
+            background-color: #a2de96;
+            border: none;
+            outline: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .collapsible-section:hover {
+            background-color: #438a5e;
+        }
+
+        .content {
+            background-color: #e1ffc2;
+            display: none;
+            font-size: 20px;
+            padding: 10px;
+        }
+		
+		.text { 
+			background-color: #e1ffc2; 
+			display: none; 
+			font-size: 20px; 
+		} 
+	</style> 
+<head> 
+<body> 
+	<h1 style="color: green">GeeksforGeeks</h1>
+    <button type="button" class="collapsible-section">
+        Open Collapsible section
+    </button>
+
+    <div class="content">
+        A Computer Science portal for geeks.
+        It contains well-written, well-thought,
+        and well-explained computer science and
+        programming articles, quizzes, and ...
+    </div> 
+	
+	<script>
+        var btn = document.querySelector(".collapsible-section");
+        var content = document.querySelector(".content");
+
+        btn.addEventListener("click", function () {
+            this.classList.toggle("active");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    </script> 
+</body>
