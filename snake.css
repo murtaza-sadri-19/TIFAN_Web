@@ -1,0 +1,30 @@
+*{
+    background-color: rgb(232, 232, 232);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+}
+.content{
+    padding: 30px;
+}
+.featurette-divider{
+    width: 50%;
+    height: 2px;
+}
+.content > h2{
+    background-color: aqua;
+    font-size: 2em;
+    text-align: center;
+}
